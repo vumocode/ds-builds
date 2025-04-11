@@ -1,0 +1,166 @@
+:root {
+  --bg-color: #2a2132;
+  --hd-color: #19131e;
+  --main-font: "Poppins", sans-serif;
+  --guild-color: white;
+  --tank-color: rgb(0, 119, 255);
+  --supp-color: rgb(235, 196, 0);
+  --dps-color: rgb(188, 0, 0);
+  --heal-color: green;
+  --bm-color: rgb(181, 181, 181);
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  gap: 2vw;
+  background-color: var(--hd-color);
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  font-size: 2vw;
+  font-weight: 600;
+  pointer-events: none;
+  user-select: none;
+  justify-content: center;
+}
+
+.options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.option {
+  display: flex;
+  width: 12vw;
+  padding: 5px 0px 5px 0px;
+  margin: 5px;
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  font-size: 1.5vw;
+  font-weight: 600;
+  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.046);
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.item-table {
+  margin: 9vw auto;
+  width: 65%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: var(--main-font);
+  user-select: none;
+}
+
+.item-table th,
+.item-table td {
+  border: 1px solid #ddd;
+  padding: 0.5vw;
+  text-align: center;
+}
+
+.item-table th {
+  color: var(--tank-color);
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.item-table td {
+  color: var(--tank-color);
+  font-weight: bold;
+}
+
+table img {
+  width: -webkit-fill-available;
+  height: auto;
+}
+
+.dual-img {
+  position: relative;
+}
+
+.dual-img img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  z-index: 2;
+}
+
+.dual-img img:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  z-index: 1;
+}
+
+#tank,
+#support,
+#dps,
+#heal,
+#battlemount {
+  font-family: var(--main-font);
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
+#guild {
+  margin: 0px 5px 0px 5px;
+  font-family: var(--main-font);
+  color: var(--guild-color);
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+#tank {
+  color: var(--tank-color);
+}
+
+#support {
+  color: var(--supp-color);
+}
+
+#dps {
+  color: var(--dps-color);
+}
+
+#heal {
+  color: var(--heal-color);
+}
+
+#battlemount {
+  color: var(--bm-color);
+}
+
+.footer {
+  font-size: 1vw;
+  position: relative;
+  margin: 0px 3vw 0px auto;
+  background-color: var(--hd-color);
+  color: var(--guild-color);
+  border-radius: 8px;
+  font-family: var(--main-font);
+  z-index: 1000;
+  user-select: none;
+}
