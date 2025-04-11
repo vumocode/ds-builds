@@ -55,6 +55,9 @@ body {
   color: var(--supp-color);
 }
 
+.heal-th{
+  color: var(--heal-color);
+}
 .item-table td {
   color: var(--tank-color);
   font-weight: bold;
