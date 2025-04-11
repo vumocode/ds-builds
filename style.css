@@ -25,15 +25,15 @@ body {
   align-items: center;
 }
 
-#welcome{
-    font-size: 3vw;
-    font-family: var(--main-font);
-    display: flex;
-    text-wrap: nowrap;
-    color: var(--guild-color);
+#welcome {
+  font-size: 3vw;
+  font-family: var(--main-font);
+  display: flex;
+  text-wrap: nowrap;
+  color: var(--guild-color);
 }
 
-#info{
+#info {
   font-size: 1vw;
   font-family: var(--main-font);
   display: flex;
@@ -46,7 +46,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: #5865F2;
+  background-color: #5865f2;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
