@@ -114,6 +114,10 @@ body {
   color: var(--dps-color);
 }
 
+.bm-th{
+  color: var(--bm-color);
+}
+
 .item-table td {
   color: var(--tank-color);
   font-weight: bold;
