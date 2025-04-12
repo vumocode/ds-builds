@@ -80,7 +80,7 @@ body {
 
 .item-table {
   margin: 9vw auto;
-  width: 65%;
+  width: 60%;
   table-layout: fixed;
   border-collapse: collapse;
   font-family: var(--main-font);
