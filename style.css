@@ -109,6 +109,11 @@ body {
 .heal-th {
   color: var(--heal-color);
 }
+
+.dps-th{
+  color: var(--dps-color);
+}
+
 .item-table td {
   color: var(--tank-color);
   font-weight: bold;
