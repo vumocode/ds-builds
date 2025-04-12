@@ -148,16 +148,6 @@ table img {
   z-index: 1;
 }
 
-#tank,
-#support,
-#dps,
-#heal,
-#battlemount {
-  font-family: var(--main-font);
-  font-size: 1.5vw;
-  text-decoration: none;
-}
-
 #guild {
   margin: 0px 5px 0px 5px;
   font-family: var(--main-font);
@@ -166,24 +156,64 @@ table img {
   text-decoration: none;
 }
 
+#tank,
+#tank-active,
+#support,
+#support-active,
+#dps,
+#dps-active,
+#heal,
+#heal-active,
+#battlemount,
+#battlemount-active {
+  font-family: var(--main-font);
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
 #tank {
   color: var(--tank-color);
+}
+
+#tank-active {
+  color: var(--tank-color);
+  text-shadow: 0px 0px 20px, 0px 0px 30px var(--tank-color);
 }
 
 #support {
   color: var(--supp-color);
 }
 
+#support-active {
+  color: var(--supp-color);
+  text-shadow: 0px 0px 20px, 0px 0px 30px var(--supp-color);
+}
+
 #dps {
   color: var(--dps-color);
+}
+
+#dps-active {
+  color: var(--dps-color);
+  text-shadow: 0px 0px 20px, 0px 0px 30px var(--dps-color);
 }
 
 #heal {
   color: var(--heal-color);
 }
 
+#heal-active {
+  color: var(--heal-color);
+  text-shadow: 0px 0px 20px, 0px 0px 30px var(--heal-color);
+}
+
 #battlemount {
   color: var(--bm-color);
+}
+
+#battlemount-active {
+  color: var(--bm-color);
+  text-shadow: 0px 0px 20px, 0px 0px 30px var(--bm-color);
 }
 
 .footer {
