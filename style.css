@@ -70,12 +70,53 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 4vw;
   display: flex;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   gap: 2vw;
   background-color: var(--hd-color);
   align-items: center;
   z-index: 9999;
+}
+
+#smallscale,
+#avaroads {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--guild-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--hd-color);
+  z-index: 1000;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  align-items: center;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 500px;
+  padding: 1.5vw 0 5px 0;
+  opacity: 1;
+  pointer-events: auto;
+  align-items: center;
 }
 
 .item-table {
@@ -169,7 +210,7 @@ table img {
 #battlemount,
 #battlemount-active {
   font-family: var(--main-font);
-  font-size: 1.5vw;
+  font-size: 1vw;
   text-decoration: none;
   user-select: none;
 }
@@ -178,45 +219,45 @@ table img {
   color: var(--tank-color);
 }
 
-#tank-active {
+#tank:hover {
   color: var(--tank-color);
-  text-shadow: 0px 0px 20px, 0px 0px 30px var(--tank-color);
+  text-shadow: 0px 0px 10px, 0px 0px 10px var(--tank-color);
 }
 
 #support {
   color: var(--supp-color);
 }
 
-#support-active {
+#support:hover {
   color: var(--supp-color);
-  text-shadow: 0px 0px 20px, 0px 0px 30px var(--supp-color);
+  text-shadow: 0px 0px 10px, 0px 0px 10px var(--supp-color);
 }
 
 #dps {
   color: var(--dps-color);
 }
 
-#dps-active {
+#dps:hover {
   color: var(--dps-color);
-  text-shadow: 0px 0px 20px, 0px 0px 30px var(--dps-color);
+  text-shadow: 0px 0px 10px, 0px 0px 10px var(--dps-color);
 }
 
 #heal {
   color: var(--heal-color);
 }
 
-#heal-active {
+#heal:hover {
   color: var(--heal-color);
-  text-shadow: 0px 0px 20px, 0px 0px 30px var(--heal-color);
+  text-shadow: 0px 0px 10px, 0px 0px 10px var(--heal-color);
 }
 
 #battlemount {
   color: var(--bm-color);
 }
 
-#battlemount-active {
+#battlemount:hover {
   color: var(--bm-color);
-  text-shadow: 0px 0px 20px, 0px 0px 30px var(--bm-color);
+  text-shadow: 0px 0px 10px, 0px 0px 10px var(--bm-color);
 }
 
 .footer {
