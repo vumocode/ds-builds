@@ -8,7 +8,7 @@
   --supp-color: rgb(235, 196, 0);
   --dps-color: rgb(188, 0, 0);
   --heal-color: green;
-  --bm-color: rgb(181, 181, 181)
+  --bm-color: rgb(181, 181, 181);
 }
 
 body {
@@ -81,16 +81,65 @@ body {
 }
 
 #smallscale,
-#avaroads {
+#avaroads,
+#bombsquad,
+#pk,
+#tenman {
   font-family: var(--main-font);
   font-size: 1vw;
   color: var(--guild-color);
   cursor: pointer;
   user-select: none;
+  text-decoration: none;
+}
+
+#smallscale-tank {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--tank-color);
+  text-shadow: 0px 0px 20px, 0px 0px 10px var(--tank-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+#smallscale-supp {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--supp-color);
+  text-shadow: 0px 0px 20px, 0px 0px 10px var(--supp-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+#smallscale-dps {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--dps-color);
+  text-shadow: 0px 0px 20px, 0px 0px 10px var(--dps-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+#smallscale-heal {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--heal-color);
+  text-shadow: 0px 0px 20px, 0px 0px 10px var(--heal-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+#smallscale-bm {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--bm-color);
+  text-shadow: 0px 0px 20px, 0px 0px 10px var(--bm-color);
+  cursor: pointer;
+  user-select: none;
 }
 
 .dropdown {
-  padding: 1.2vw 0px 1.3vw 0px;
+  padding: 1.3vw 0px 1.2vw 0px;
   display: flex;
   position: relative;
 }
@@ -202,15 +251,10 @@ table img {
 }
 
 #tank,
-#tank-active,
 #support,
-#support-active,
 #dps,
-#dps-active,
 #heal,
-#heal-active,
-#battlemount,
-#battlemount-active {
+#battlemount {
   font-family: var(--main-font);
   font-size: 1vw;
   text-decoration: none;
