@@ -1,13 +1,14 @@
 :root {
   --bg-color: #2a2132;
   --hd-color: #19131e;
+  --dd-color: #201927;
   --main-font: "Poppins", sans-serif;
   --guild-color: white;
   --tank-color: rgb(0, 119, 255);
   --supp-color: rgb(235, 196, 0);
   --dps-color: rgb(188, 0, 0);
   --heal-color: green;
-  --bm-color: rgb(181, 181, 181);
+  --bm-color: rgb(181, 181, 181)
 }
 
 body {
@@ -89,6 +90,7 @@ body {
 }
 
 .dropdown {
+  padding: 1.2vw 0px 1.3vw 0px;
   display: flex;
   position: relative;
 }
@@ -101,7 +103,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--hd-color);
+  background-color: var(--dd-color);
   z-index: 1000;
   max-height: 0;
   opacity: 0;
@@ -113,7 +115,7 @@ body {
 
 .dropdown:hover .dropdown-content {
   max-height: 500px;
-  padding: 1.5vw 0 5px 0;
+  padding: 5px 0 5px 0;
   opacity: 1;
   pointer-events: auto;
   align-items: center;
