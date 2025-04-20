@@ -9,6 +9,7 @@
   --dps-color: rgb(188, 0, 0);
   --heal-color: green;
   --bm-color: rgb(181, 181, 181);
+  --tenman-color: rgb(255, 255, 0);
 }
 
 body {
@@ -84,7 +85,8 @@ body {
 #avaroads,
 #bombsquad,
 #pk,
-#tenman {
+#tenman,
+#tenman-active {
   font-family: var(--main-font);
   font-size: 1vw;
   color: var(--guild-color);
@@ -134,6 +136,15 @@ body {
   font-size: 1vw;
   color: var(--bm-color);
   text-shadow: 0px 0px 20px, 0px 0px 10px var(--bm-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+#tenman-active {
+  font-family: var(--main-font);
+  font-size: 1vw;
+  color: var(--tenman-color);
+  text-shadow: 0px 0px 20px, 0px 0px 10px var(--tenman-color);
   cursor: pointer;
   user-select: none;
 }
@@ -209,6 +220,10 @@ body {
 
 .bm-th {
   color: var(--bm-color);
+}
+
+.tenman-th{
+  color: var(--tenman-color);
 }
 
 .item-table td {
