@@ -1,12 +1,12 @@
 const updateDualImages = () => {
   document.querySelectorAll("td").forEach((td) => {
     const imgs = td.querySelectorAll("img");
+    td.classList.remove("dual-img", "triple-img");
+
     if (imgs.length === 2) {
-      if (!td.classList.contains("dual-img")) {
-        td.classList.add("dual-img");
-      }
-    } else {
-      td.classList.remove("dual-img");
+      td.classList.add("dual-img");
+    } else if (imgs.length === 3) {
+      td.classList.add("triple-img");
     }
   });
 };
