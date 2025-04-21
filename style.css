@@ -190,6 +190,23 @@ body {
   user-select: none;
 }
 
+.item-table {
+  margin: 9vw auto 0 auto;
+  width: 60%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: var(--main-font);
+  user-select: none;
+}
+
+#escapeset {
+  margin: 0 auto 9vw auto !important;
+}
+
+#escapeset th, #escapeset td{
+  border-top: none;
+}
+
 .item-table th,
 .item-table td {
   border: 1px solid #ddd;
